@@ -19,10 +19,10 @@ import com.mongodb.MongoURI;
 @EnableMongoRepositories(basePackages = "com.surpreso.spring_mongo.dao")
 public class MongoDbConfig extends AbstractMongoConfiguration {
 
-	@Value("${app.mongo.url}")
+	@Value("${mongo.url}")
 	private String url;
 
-	@Value("${app.mongo.db}")
+	@Value("${mongo.db}")
 	private String databaseName;
 
 	@Override
